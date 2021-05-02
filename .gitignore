@@ -1,0 +1,9 @@
+## build
+build/
+dist/
+
+## mac
+.DS_Store
+
+##pycache
+__pycache__/
