@@ -6,21 +6,6 @@ This python package contains functions for stack-based esoteric programming lang
 [Beatink] is a stack-based esoteric programming language created by Cliff L. Biffle.
 This package contains each ACTION functions by the rules of beatnik, and build a stack to calculate the resulted output from the given text.
 
-###Scrabble letter values
---- ABCDEFGHIJKLMNOPQRSTUVWXYZ ---
- 1: A---E---I--L-NO--RSTU-----
- 2: ---D--G-------------------
- 3: -BC---------M--P----------
- 4: -----F-H-------------VW-Y-
- 5: ----------K---------------
- 6: --------------------------
- 7: --------------------------
- 8: ---------J-------------X--
- 9: --------------------------
-10: ----------------Q--------Z
---- ABCDEFGHIJKLMNOPQRSTUVWXYZ ---
-
-###Action list
 The following table describes the meaning of the ACTIONS (see above).
 | Score | Pseudo-Code | Description|
 |-------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -49,22 +34,8 @@ pip install beatnik
 ```
 
 ## Usage
-
-###import
 ```python
 import beatnik
-```
-
-###scrabbling word
-```python
-beatnik.scrabble(words)
-```
-`words` are list of words that before scrabble
-
-
-###running stack machine
-```python
-beatnik.beatnik(words,VALUE,debug=False)
 ```
 
 ## License
@@ -73,3 +44,15 @@ MIT
 
 
    [Beatink]: <https://esolangs.org/wiki/Beatnik>
+   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
+   [john gruber]: <http://daringfireball.net>
+   [df1]: <http://daringfireball.net/projects/markdown/>
+   [markdown-it]: <https://github.com/markdown-it/markdown-it>
+   [Ace Editor]: <http://ace.ajax.org>
+   [node.js]: <http://nodejs.org>
+   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
+   [jQuery]: <http://jquery.com>
+   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
+   [express]: <http://expressjs.com>
+   [AngularJS]: <http://angularjs.org>
+   [Gulp]: <http://gulpjs.com>

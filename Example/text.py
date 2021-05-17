@@ -1,5 +1,5 @@
+import beatnik
 import re
-import beatnik/Beatnik as beatnik
 #insert text
 text = '''
 He arrived.
@@ -25,13 +25,11 @@ word = textt.split()
 VALUE = []
 counter =0
 
-bt = beatnik.beatnik()
 
 for i in word:
-    value = bt.scrabble(i)
+    value = beatnik.scrabble(i)
     VALUE.append(value)
     counter+=1
 #print(VALUE)
 
-
-bt.beatnik(word,VALUE,debug=False)
+beatnik.beatnik(word,VALUE,debug=False)
