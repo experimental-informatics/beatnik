@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'beatnik',
   packages = ['beatnik'],
-  version = '0.4',
+  version = '0.5',
   license='MIT',
   description = 'beatnik interpreter',
   author = 'Experimental Informatics',
