@@ -134,7 +134,7 @@ def STOP(stack,VALUE,index):
     return len(VALUE)
 
 
-def beatnik(words,VALUE,debug=False):
+def stack(words,VALUE,debug=False):
     ACTION = {
         5: 'PUSH',
         6: 'DISCARD',
@@ -233,3 +233,12 @@ def beatnik(words,VALUE,debug=False):
         else:
             print(output, end='')
     print()
+
+
+def beatnik(text,debug=False):
+    word = beatnik.preprocess(text)
+    VALUE = []
+    for i in word:
+        value = beatnik.scrabble(i)
+        VALUE.append(value)
+    beatnik.stack(word,VALUE,debug=debug)

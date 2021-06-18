@@ -1,6 +1,5 @@
 import beatnik
-import re
-#insert text
+
 text = '''
 He arrived.
 
@@ -16,20 +15,10 @@ If he's a guy who is faithful, kind, and will be mine joyously to the end, I wil
 
 "You absolutely need to know", I say, nervously, "that I...I...I..."
 '''
-text=text.replace("ä","ae").replace("Ä","Ae").replace("ö","oe").replace("Ö","oe").replace("ü","ue").replace("Ü","ue")
-remove_digits = str.maketrans('', '', '0123456789')
-text = text.translate(remove_digits)
-textt = re.sub(r'[^\w\s]','',text)
-word = textt.split()
 
-VALUE = []
-counter =0
+#show the process of stack machine
+beatnik.beatnik(text,debug=True)
 
 
-for i in word:
-    value = beatnik.scrabble(i)
-    VALUE.append(value)
-    counter+=1
-#print(VALUE)
-
-beatnik.beatnik(word,VALUE,debug=False)
+#Only showing the end result
+beatnik.beatnik(text,debug=False)
