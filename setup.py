@@ -1,10 +1,16 @@
 from distutils.core import setup
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
   name = 'beatnik',
   packages = ['beatnik'],
   version = '0.5',
   license='MIT',
   description = 'beatnik interpreter',
+  long_description=long_description,
+  long_description_content_type="text/markdown",
   author = 'Experimental Informatics',
   author_email = 't.liu@khm.de',
   url = 'https://github.com/experimental-informatics/beatnik',
