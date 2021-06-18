@@ -63,7 +63,18 @@ import beatnik
 
 
 ---
-## Usage Number 1 Step-by-step
+## Usa the library directly on Jupyter lab
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/experimental-informatics/beatnik/HEAD)
+
+
+
+## Usage Number 1 direct usage of this library
+```python
+text = "this is a line of text"
+beatnik.beatnik(text,debug=True)
+```
+
+## Usage Number 2 Step-by-step
 
 **preprocess text*
 ```python
@@ -83,18 +94,11 @@ beatnik.scrabble(words)
 beatnik.stack(words,VALUE,debug=False)
 ```
 
-## Usage Number 2 direct usage of this library
-```python
-text = "this is a line of text"
-beatnik.beatnik(text,debug=True)
-```
-
 
 ---
 
 ## License
 
 MIT
-
 
    [Beatink]: <https://esolangs.org/wiki/Beatnik>
