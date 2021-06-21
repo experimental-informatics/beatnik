@@ -64,6 +64,8 @@ import beatnik
 
 ---
 ## Usa the library directly on Jupyter lab
+Use the example file beatnik_interact
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/experimental-informatics/beatnik/HEAD)
 
 
@@ -76,7 +78,7 @@ beatnik.beatnik(text,debug=True)
 
 ## Usage Number 2 Step-by-step
 
-**preprocess text*
+**preprocess text**
 ```python
 text = "this is a line of text"
 words = beatnik.preprocess(text)
