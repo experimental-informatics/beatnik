@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
   name = 'beatnik',
   packages = ['beatnik'],
-  version = '0.65',
+  version = '0.6',
   license='MIT',
   description = 'beatnik interpreter',
   long_description=long_description,
