@@ -235,7 +235,7 @@ def stack(words,VALUE,debug=False):
     print()
 
 
-def beatnik(text,debug=False):
+def beatnik_run(text,debug=False):
     word = beatnik.preprocess(text)
     VALUE = []
     for i in word:
