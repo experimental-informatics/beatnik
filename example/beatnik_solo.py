@@ -17,7 +17,7 @@ If he's a guy who is faithful, kind, and will be mine joyously to the end, I wil
 '''
 
 #show the process of stack machine
-beatnik.beatnik(text,debug=True)
+#beatnik.beatnik(text,debug=True)
 
 #Only showing the end result
-beatnik.beatnik(text,debug=False)
+#sbeatnik.beatnik(text,debug=False)

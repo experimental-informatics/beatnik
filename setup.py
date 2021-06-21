@@ -1,12 +1,12 @@
 from distutils.core import setup
 
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+#with open("README.md", "r", encoding="utf-8") as fh:
+#    long_description = fh.read()
 
 setup(
   name = 'beatnik',
   packages = ['beatnik'],
-  version = '0.6',
+  version = '0.61',
   license='MIT',
   description = 'beatnik interpreter',
   #long_description=long_description,
