@@ -28,6 +28,10 @@ Scrabble letter values
 **Action list**
 
 The following table describes the meaning of the ACTIONS (see above).
+
+
+
+
 | Score | Pseudo-Code | Description|
 |-------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <5| NOOP| Does nothing. The Beatnik Interpreter may mock you for your poor scoring, at its discretion.|

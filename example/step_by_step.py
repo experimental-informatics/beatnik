@@ -3,19 +3,28 @@ import re
 
 #insert a part of text
 text = '''
-He arrived.
-
-He arrived at my door extremely late one day.
-
-If you only did uninteresting, idle things in your life, always acting as if nothing he does will change your opinion ... can go well.
-
-But one awful dilemma I face, is that growing emotion ruins my serious, careful way of thinking. If a love flame is forced and futile, why bother kindling another one?
-
-Yet, you think, it might not be a bad idea. Relationships always work out, and this can be an escape from a tense, complex life. Unmarried at home, lost in a loud, irregular reality ... maybe sometime, just maybe, it's time I found the one.
-
-If he's a guy who is faithful, kind, and will be mine joyously to the end, I will prove to him I shall cherish and treasure him just as much. But how do I say it? I can't place the words...
-
-"You absolutely need to know", I say, nervously, "that I...I...I..."
+Sind Zeichen oder Programmierkenntnisse somit Texte, wenn Entscheidungsfindungen statt in Zusammenhang mit uns in einem größeren Kontext (also im System: Material) stehen?
+He Hazardous
+of we strong
+follow bacteria walks
+by town guy place
+Er stand neben mir,
+sprach er Sätze, dass nicht von mir versteht wurden.
+bis übermorgen, blieben die Sätze mir im Gedächtnis.
+fünf verschiedene Grammatiken, verwendente er.
+Schritt für Schritt. Ohne jede vernünftige Struktur, gabe er mir.
+Farbe, dass niemand viel findet, wurde gezeigt.
+aus der und die
+alle in alt
+und das land schiß
+sang der haß der flöhe für die hysterischen und ausgeschlossenen frauen
+Of neighborhood reputation:
+Doubted empty buses’ land  A very cold girl  Taxi of attempt
+By Paris’ gestures
+Man sagt, dass alle Übersetzungen nur für den Leser sind. Werke dienen nur der Hörerschaft, oder? Es gibt Werke, die dienen. Es gibt überdies Leben – das doppelsinnige Dichterische oder geheimnisvolle Bild. Es gilt: Wesentliche Übersetzer, das sind Dichter. Genug für den Augenblick, oder nicht? Darauf: translate!
+sing walfisch! vorhin loesten anderswo dicke boote ihre anker.
+Man sagt, dass alle Übersetzungen nur für den Leser sind. Genug, denn gegenüber gibt es eines Dichtung. tongue teilt doppelsinnig tongue teilt mutter tongue macht übel oder grundsätzlich nicht translate.
+mit Körperflüssigkeiten verschwimmen mit Resilienz Poren mit Erderwärmung nicht sich.
 '''
 
 
