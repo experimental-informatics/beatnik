@@ -4,4 +4,4 @@ setup.py
 beatnik/__init__.py
 beatnik/beatnik_functions.py
 beatnik/preprocess_text.py
-beatnik/scrabble.py
+beatnik/scrabble_text.py

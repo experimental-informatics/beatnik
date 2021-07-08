@@ -1,16 +1,20 @@
-from distutils.core import setup
+from setuptools import setup, find_packages  # Always prefer setuptools over distutils
+from codecs import open  # To use a consistent encoding
+from os import path
 
-#with open("README.md", "r", encoding="utf-8") as fh:
-#    long_description = fh.read()
+here = path.abspath(path.dirname(__file__))
+
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
   name = 'beatnik',
-  packages = ['beatnik'],
-  version = '0.61',
+  version = '0.77',
   license='MIT',
   description = 'beatnik interpreter',
-  #long_description=long_description,
-  #long_description_content_type="text/markdown",
+  long_description=long_description,
+  long_description_content_type='text/markdown',
+  packages=find_packages(),
   author = 'Experimental Informatics',
   author_email = 't.liu@khm.de',
   url = 'https://github.com/experimental-informatics/beatnik',

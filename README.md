@@ -1,15 +1,15 @@
-# Beatnik
+Beatnik
+===========
 This python package contains functions for stack-based esoteric programming language: Beatnik
-
-
 ---
-## Description
 
+Description
+-----------
 [Beatink] is a stack-based esoteric programming language created by Cliff L. Biffle.
 This package contains each ACTION functions by the rules of beatnik, and build a stack to calculate the resulted output from the given text.
 
 <pre>
-**Scrabble letter values**
+Scrabble letter values
 --- ABCDEFGHIJKLMNOPQRSTUVWXYZ ---
  1: A---E---I--L-NO--RSTU-----
  2: ---D--G-------------------
@@ -23,9 +23,10 @@ This package contains each ACTION functions by the rules of beatnik, and build a
 10: ----------------Q--------Z
 --- ABCDEFGHIJKLMNOPQRSTUVWXYZ ---
 </pre>
-
+---
 
 **Action list**
+
 The following table describes the meaning of the ACTIONS (see above).
 | Score | Pseudo-Code | Description|
 |-------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -48,59 +49,64 @@ The following table describes the meaning of the ACTIONS (see above).
 
 ---
 ## Installation
+------------
 
 The Blend Modes package can be installed through pip:
 ```sh
 pip install beatnik
 ```
 
----
-## Import
+
+Import
+-----
 
 ```python
-import beatnik
+from beatnik import beatnik_simple
+from beatnik import beatnik_stack
 ```
 
 
----
-## Usa the library directly on Jupyter lab
-Use the example file beatnik_interact
-
+Usage
+------------
+Use the library directly on Jupyter lab
+-----
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/experimental-informatics/beatnik/HEAD)
 
-
-
-## Usage Number 1 direct usage of this library
+Use the example file beatnik_interact
+-----
+Simple usage of this library
 ```python
 text = "this is a line of text"
-beatnik.beatnik(text,debug=True)
+beatnik.beatnik_simple(text,debug=True)
 ```
+---
 
-## Usage Number 2 Step-by-step
+Step-by-step
 
-**preprocess text**
+preprocess text
 ```python
 text = "this is a line of text"
 words = beatnik.preprocess(text)
 ```
 
-**scrabbling word**
+
+scrabbling word
+------------
 ```python
 beatnik.scrabble(words)
 ```
 `words` are list of words that before scrabble
 
 
-**running stack machine**
+running stack machine
+------------
 ```python
 beatnik.stack(words,VALUE,debug=False)
 ```
 
 
----
-
-## License
-
-MIT
+License
+-------------
+The Beatnik package is distributed under the [MIT License (MIT)](https://github.com/experimental-informatics/beatnik/blob/master/LICENSE.txt). Please also take note of the licenses of the dependencies.
 
    [Beatink]: <https://esolangs.org/wiki/Beatnik>
