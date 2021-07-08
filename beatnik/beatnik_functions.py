@@ -1,4 +1,8 @@
 
+import re
+from beatnik.preprocess_text import preprocess
+from beatnik.scrabble_text import scrabble
+
 def PUSH(stack,VALUE,index):
     # exception for ArrayIndexOutOfBoundary
     index += 1
@@ -134,7 +138,7 @@ def STOP(stack,VALUE,index):
     return len(VALUE)
 
 
-def stack(words,VALUE,debug=False):
+def beatnik_stack(words,VALUE,debug=False):
     ACTION = {
         5: 'PUSH',
         6: 'DISCARD',
@@ -235,10 +239,10 @@ def stack(words,VALUE,debug=False):
     print()
 
 
-def beatnik_run(text,debug=False):
-    word = beatnik.preprocess(text)
+def beatnik_simple(text,debug=False):
+    word = preprocess(text)
     VALUE = []
     for i in word:
-        value = beatnik.scrabble(i)
+        value = scrabble(i)
         VALUE.append(value)
-    beatnik.stack(word,VALUE,debug=debug)
+    beatnik_stack(word,VALUE,debug=debug)
