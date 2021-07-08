@@ -1,4 +1,4 @@
-import beatnik
+from beatnik import beatnik_simple
 
 text = '''
 He arrived.
@@ -17,7 +17,7 @@ If he's a guy who is faithful, kind, and will be mine joyously to the end, I wil
 '''
 
 #show the process of stack machine
-#beatnik.beatnik(text,debug=True)
+beatnik_simple(text,debug=True)
 
 #Only showing the end result
-#sbeatnik.beatnik(text,debug=False)
+beatnik_simple(text,debug=False)

@@ -1,4 +1,4 @@
-import beatnik
+from beatnik import beatnik_stack
 import re
 
 #insert a part of text
@@ -33,4 +33,4 @@ for i in word:
     value = beatnik.scrabble(i)
     VALUE.append(value)
 
-beatnik.stack(word,VALUE,debug=False)
+beatnik_stack(word,VALUE,debug=False)
