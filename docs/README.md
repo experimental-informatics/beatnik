@@ -26,9 +26,7 @@ Scrabble letter values
 ---
 Action list
 
-<p align="center">
-  <img src="action_table.png"  width="500" >
-</p>
+![](https://github.com/experimental-informatics/beatnik/blob/master/docs/action_table.png)
 
 ---
 Installation

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: beatnik
-Version: 0.78
+Version: 0.79
 Summary: beatnik interpreter
 Home-page: https://github.com/experimental-informatics/beatnik
 Author: Experimental Informatics
@@ -34,9 +34,7 @@ Description: Beatnik
         ---
         Action list
         
-        <p align="center">
-          <img src="action_table.png"  width="500" >
-        </p>
+        ![](https://github.com/experimental-informatics/beatnik/blob/master/docs/action_table.png)
         
         ---
         Installation
