@@ -1,7 +1,7 @@
 Beatnik
 ===========
 This python package contains functions for stack-based esoteric programming language: Beatnik
----
+
 
 Description
 -----------
@@ -52,7 +52,8 @@ The following table describes the meaning of the ACTIONS (see above).
 | >23   |                                        | Generates "Beatnik applause" for the programmer.  
 
 ---
-## Installation
+
+Installation
 ------------
 
 The Blend Modes package can be installed through pip:
@@ -71,13 +72,13 @@ from beatnik import beatnik_stack
 
 
 Usage
-------------
-Use the library directly on Jupyter lab
+
+### Use the library directly on Jupyter lab
 -----
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/experimental-informatics/beatnik/HEAD)
 
-Use the example file beatnik_interact
------
+### Use the example file beatnik_interact
+
 Simple usage of this library
 ```python
 text = "this is a line of text"
@@ -85,7 +86,7 @@ beatnik.beatnik_simple(text,debug=True)
 ```
 ---
 
-Step-by-step
+### Step-by-step
 
 preprocess text
 ```python
