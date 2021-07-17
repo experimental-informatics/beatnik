@@ -71,13 +71,12 @@ from beatnik import beatnik_stack
 ```
 
 
-Usage
-
 ### Use the library directly on Jupyter lab
 -----
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/experimental-informatics/beatnik/HEAD)
 
 ### Use the example file beatnik_interact
+-----
 
 Simple usage of this library
 ```python
