@@ -9,7 +9,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
   name = 'beatnik',
-  version = '0.794',
+  version = '0.8',
   license='MIT',
   description = 'beatnik interpreter',
   long_description=long_description,
