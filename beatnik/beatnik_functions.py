@@ -25,7 +25,10 @@ def ADD(stack,VALUE,index):
 
 
 def INPUT(stack,VALUE,index):
-    stack.append(scrabble(input("input your own word:")))
+    #stack.append(scrabble(input("input your own word:")))
+    index += 1
+    if(index < len(VALUE)):
+        stack.append(VALUE[index] % 256)
     return index
 
 
