@@ -71,10 +71,6 @@ from beatnik import beatnik_stack
 ```
 
 
-### Use the library directly on Jupyter lab
------
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/experimental-informatics/beatnik/HEAD)
-
 ### Use the example file beatnik_interact
 -----
 
@@ -113,4 +109,4 @@ License
 -------------
 The Beatnik package is distributed under the [MIT License (MIT)](https://github.com/experimental-informatics/beatnik/blob/master/LICENSE.txt). Please also take note of the licenses of the dependencies.
 
-   [Beatink]: <https://esolangs.org/wiki/Beatnik>
+[Beatink]: <https://esolangs.org/wiki/Beatnik>
