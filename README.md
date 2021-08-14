@@ -93,7 +93,10 @@ words = beatnik.preprocess(text)
 scrabbling word
 ------------
 ```python
-beatnik.scrabble(words)
+VALUE = []
+  for i in word:
+      value = beatnik.scrabble(i)
+      VALUE.append(value)
 ```
 `words` are list of words that before scrabble
 
