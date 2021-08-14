@@ -9,13 +9,13 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
   name = 'beatnik',
-  version = '0.81',
+  version = '0.82',
   license='MIT',
   description = 'beatnik interpreter',
   long_description=long_description,
   long_description_content_type='text/markdown',
   packages=find_packages(),
-  author = 'Experimental Informatics',
+  author = 'Ting Chun Liu',
   author_email = 't.liu@khm.de',
   url = 'https://github.com/experimental-informatics/beatnik',
   keywords = ['beatnik', 'esoteric programming language', 'stack-based'],

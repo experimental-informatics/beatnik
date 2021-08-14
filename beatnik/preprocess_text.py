@@ -7,7 +7,7 @@ import re
 
 def preprocess(text):
     text=text.replace("ä","ae").replace("Ä","Ae").replace("ö","oe").replace("Ö","oe").replace("ü","ue").replace("Ü","ue")
-    remove_digits = str.maketrans('', '', '0123456789')
+    remove_digits = str.maketrans('', '', '0123456789_-!?:\"\'')
     text = text.translate(remove_digits)
     text = re.sub(r'[^\w\s]','',text)
     word = text.split()
