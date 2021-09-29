@@ -3,9 +3,13 @@ import re
 from beatnik.preprocess_text import preprocess
 from beatnik.scrabble_text import scrabble
 
-def PUSH(stack,VALUE,index):
+
+def PUSH(stack, VALUE, index):
     # exception for ArrayIndexOutOfBoundary
     index += 1
+
+    if(index >= len(VALUE)):
+        return index
     if(index < len(VALUE)):
         stack.append(VALUE[index] % 256)
     return index
@@ -25,7 +29,7 @@ def ADD(stack,VALUE,index):
 
 
 def INPUT(stack,VALUE,index):
-    #stack.append(scrabble(input("input your own word:")))
+    # stack.append(scrabble(input("input your own word:")))
     index += 1
     if(index < len(VALUE)):
         stack.append(VALUE[index] % 256)
@@ -34,7 +38,7 @@ def INPUT(stack,VALUE,index):
 
 def OUTPUT(stack,VALUE,index):
     output_ = ''
-    #output only when there are at least 1 element
+    # output only when there are at least 1 element
     if(len(stack)>0):
         output_ = chr(abs(stack.pop()%256))
     return index, output_
@@ -161,6 +165,8 @@ def beatnik_stack(words,VALUE,debug=False):
     index, index_for_print = 0, 0
     length = len(VALUE)
     stack = []
+    checkForOutOfBoundaryPush = False
+
     while(index < length):
         output = ''
         n = VALUE[index]
@@ -170,8 +176,10 @@ def beatnik_stack(words,VALUE,debug=False):
         if(n>=5 and n<= 17):
                 if(n==5):
                     index = PUSH(stack,VALUE,index)
-                    if(debug):
+                    if(debug and index < len(VALUE)):
                         print('\n{:<4} {:<18} {:>2} >> {:<18}'.format(index,words[index],VALUE[index],"Value Pushed"),end='')
+                    else:
+                        checkForOutOfBoundaryPush = True
                 if(n==6):
                     index = DISCARD(stack,VALUE,index)
                 if(n==7):
@@ -220,10 +228,10 @@ def beatnik_stack(words,VALUE,debug=False):
 
                 if(n==17):
                     index = STOP(stack,VALUE,index)
-                #moving to next index
+                # moving to next index
                 index += 1
         else:
-            #non
+            # non
             index += 1
 
         # debug
@@ -231,8 +239,10 @@ def beatnik_stack(words,VALUE,debug=False):
         # update index_for_print
         index_for_print = index
 
-        if(debug):
+        if(debug and checkForOutOfBoundaryPush==False):
             print(" >> ",stack)
+        else:
+            print("Waiting For Value to push")
 
         # check if we have an output (9), then print it
         if output != '' and debug:
